@@ -19,6 +19,15 @@
     <Filter Include="Header Files\dataStore">
       <UniqueIdentifier>{838e6da9-8d08-4bcb-b62d-9ae8417f23cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ui">
+      <UniqueIdentifier>{8658ae56-e3c1-4f5c-9f4f-b63181a01960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui\baseUI">
+      <UniqueIdentifier>{f68915fc-5c88-4fe8-b928-7e826b84a4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui\checkBox">
+      <UniqueIdentifier>{109c66fe-acc5-4ab8-98d6-4c417378f432}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,6 +41,12 @@
     </ClCompile>
     <ClCompile Include="startSettings.cpp">
       <Filter>Header Files\openPage</Filter>
+    </ClCompile>
+    <ClCompile Include="baseUI.cpp">
+      <Filter>Header Files\ui\baseUI</Filter>
+    </ClCompile>
+    <ClCompile Include="checkBox.cpp">
+      <Filter>Header Files\ui\checkBox</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +64,18 @@
     </ClInclude>
     <ClInclude Include="PreDecl_dataStore.h">
       <Filter>Header Files\dataStore</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="PreDecl_ui.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="baseUI.h">
+      <Filter>Header Files\ui\baseUI</Filter>
+    </ClInclude>
+    <ClInclude Include="checkBox.h">
+      <Filter>Header Files\ui\checkBox</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -95,7 +95,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\perth\Desktop\c++\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;ws2_32.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-network-s.lib;sfml-system-s.lib	;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;ws2_32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;sfml-system-s-d.lib	;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -143,6 +143,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="baseUI.cpp" />
+    <ClCompile Include="checkBox.cpp" />
     <ClCompile Include="dataStore.cpp" />
     <ClCompile Include="loadSettings.cpp" />
     <ClCompile Include="main.cpp" />
@@ -150,10 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h" />
+    <ClInclude Include="baseUI.h" />
+    <ClInclude Include="checkBox.h" />
     <ClInclude Include="dataStore.h" />
     <ClInclude Include="openPage.h" />
     <ClInclude Include="PreDecl_dataStore.h" />
     <ClInclude Include="PreDecl_openPage.h" />
+    <ClInclude Include="PreDecl_ui.h" />
+    <ClInclude Include="ui.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="settings.set" />

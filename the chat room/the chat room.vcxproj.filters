@@ -28,6 +28,15 @@
     <Filter Include="Header Files\ui\checkBox">
       <UniqueIdentifier>{109c66fe-acc5-4ab8-98d6-4c417378f432}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\textureLoader">
+      <UniqueIdentifier>{e6e013d1-0610-4995-8d45-fd4a42d7ed70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui\textButton">
+      <UniqueIdentifier>{16809977-3eb7-4ed8-a254-3c1f2b36b16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\misc">
+      <UniqueIdentifier>{95a71d66-652c-4f68-813d-32294ea9edce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -47,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="checkBox.cpp">
       <Filter>Header Files\ui\checkBox</Filter>
+    </ClCompile>
+    <ClCompile Include="textureLoader.cpp">
+      <Filter>Header Files\textureLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="textButton.cpp">
+      <Filter>Header Files\ui\textButton</Filter>
+    </ClCompile>
+    <ClCompile Include="cleanup.cpp">
+      <Filter>Header Files\misc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -77,10 +95,35 @@
     <ClInclude Include="checkBox.h">
       <Filter>Header Files\ui\checkBox</Filter>
     </ClInclude>
+    <ClInclude Include="textureLoader.h">
+      <Filter>Header Files\textureLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="PreDecl_textureLoader.h">
+      <Filter>Header Files\textureLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="textButton.h">
+      <Filter>Header Files\ui\textButton</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="settings.set">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="unchecked_checkBox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="checked_checkBox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="arial.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
   </ItemGroup>
 </Project>

@@ -14,4 +14,5 @@ int main() {
 		dS::startSettings();
 	}
 	oP::loadSettings();
+	mc::cleanup();
 }

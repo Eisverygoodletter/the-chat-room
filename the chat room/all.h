@@ -5,10 +5,12 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <string>
+#include <Thor/Resources.hpp>
 // file names
 #define SETTINGS_FILE_NAME "settings.set"
 #define TEXTURE_CHECKBOX_CHECKED "checked_checkBox.png"
 #define TEXTURE_CHECKBOX_UNCHECKED "unchecked_checkbox.png"
+#define FONT_ARIAL "Arial.ttf"
 
 // default settings
 #define DEFAULT_ENCRYPTION NULL // this expands to 0, which is an int

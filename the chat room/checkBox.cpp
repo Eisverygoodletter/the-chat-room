@@ -32,6 +32,9 @@ void ui::checkBox::setSize(sf::Vector2f size) {
 }
 
 ui::checkBox::checkBox(sf::Vector2f position, sf::Vector2f size, bool defaultChecked = false) {
+
+	this->checkedTexture = tL::rH["CHECKBOX_CHECKED"];
+	this->uncheckedTexture = tL::rH["CHECKBOX_UNCHECKED"];
 	this->checked = defaultChecked;
 	this->uncheckedSprite = sf::Sprite();
 	this->uncheckedSprite.setTexture(this->uncheckedTexture);
@@ -39,6 +42,7 @@ ui::checkBox::checkBox(sf::Vector2f position, sf::Vector2f size, bool defaultChe
 	this->checkedSprite.setTexture(this->checkedTexture);
 	this->setSize(size);
 	this->setPosition(position);
+	
 }
 
 bool ui::checkBox::checkClick(sf::Vector2f mousePos) {

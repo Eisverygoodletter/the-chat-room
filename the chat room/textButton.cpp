@@ -27,6 +27,7 @@ bool ui::textButton::checkClick(sf::Vector2f mousePos) {
 ui::textButton::textButton(std::string text, sf::Vector2f position, sf::Vector2f size) {
 	this->buttonText = sf::Text(text, textButton::defaultFont, DEFAULT_CHARACTER_SIZE);
 	this->backgroundRectangle = sf::RectangleShape();
+	this->defaultFont = tL::fH["Arial"];
 	this->setPosition(position);
 	this->setSize(size);
 }

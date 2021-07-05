@@ -4,7 +4,7 @@
 namespace ui {
 	class textButton : public ui::baseUI {
 	public:
-		inline static sf::Font defaultFont;
+		sf::Font defaultFont;
 		sf::Text buttonText;
 		sf::RectangleShape backgroundRectangle;
 		void setSize(sf::Vector2f);

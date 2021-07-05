@@ -8,8 +8,8 @@ namespace ui {
 		sf::Sprite uncheckedSprite;
 		sf::Sprite checkedSprite;
 	public:
-		inline static sf::Texture uncheckedTexture;
-		inline static sf::Texture checkedTexture;
+		sf::Texture uncheckedTexture;
+		sf::Texture checkedTexture;
 		bool getChecked();
 		void setChecked(bool);
 		void setSize(sf::Vector2f);

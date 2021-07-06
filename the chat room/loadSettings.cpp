@@ -15,6 +15,7 @@ void oP::loadSettings() {
 	sf::RenderWindow window;
 	window.create(sf::VideoMode(800, 600), "Settings");
 	ui::textButton testbutton = ui::textButton("cool Text", sf::Vector2f(10, 10), sf::Vector2f(50, 50));
+	ui::checkBox testbox = ui::checkBox(sf::Vector2f(100, 100), sf::Vector2f(50, 50), true);
 	while (window.isOpen()) {
 		sf::Event e;
 		while (window.pollEvent(e)) {
@@ -26,7 +27,9 @@ void oP::loadSettings() {
 			}
 		}
 		window.clear();
+		testbox.render(&window);
 		testbutton.render(&window);
+		testbutton.drawPosition(&window);
 		window.display();
 	}
 }

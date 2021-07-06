@@ -42,7 +42,6 @@ ui::checkBox::checkBox(sf::Vector2f position, sf::Vector2f size, bool defaultChe
 	this->checkedSprite.setTexture(this->checkedTexture);
 	this->setSize(size);
 	this->setPosition(position);
-	
 }
 
 bool ui::checkBox::checkClick(sf::Vector2f mousePos) {

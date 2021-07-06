@@ -11,11 +11,12 @@ void ui::textButton::setPosition(sf::Vector2f position) {
 }
 void ui::textButton::setSize(sf::Vector2f size) {
 	this->buttonText.scale(size);
-	this->backgroundRectangle.scale(size);
+	//this->backgroundRectangle.scale(size);
+	this->backgroundRectangle.setSize(size);
 }
 void ui::textButton::render(sf::RenderWindow* window) {
-	//window->draw(this->backgroundRectangle);
-	//window->draw(this->buttonText);
+	window->draw(this->backgroundRectangle);
+	window->draw(this->buttonText);
 }
 bool ui::textButton::checkClick(sf::Vector2f mousePos) {
 	if (this->backgroundRectangle.getGlobalBounds().contains(mousePos)) {
@@ -25,9 +26,12 @@ bool ui::textButton::checkClick(sf::Vector2f mousePos) {
 }
 
 ui::textButton::textButton(std::string text, sf::Vector2f position, sf::Vector2f size) {
-	this->buttonText = sf::Text(text, textButton::defaultFont, DEFAULT_CHARACTER_SIZE);
+	this->buttonText = sf::Text(text, *textButton::defaultFont, DEFAULT_CHARACTER_SIZE);
+	this->buttonText.setFillColor(DEFAULT_TEXTBUTTON_TEXTCOLOR);
+	//this->buttonText.setOrigin(sf::Vector2f(this->buttonText.getLocalBounds().width / 2, this->buttonText.getLocalBounds().height / 2));
 	this->backgroundRectangle = sf::RectangleShape();
-	this->defaultFont = tL::fH["Arial"];
+	this->backgroundRectangle.setFillColor(DEFAULT_TEXTBUTTON_BGCOLOR);
+	this->defaultFont = &tL::fH["Arial"];
 	this->setPosition(position);
 	this->setSize(size);
 }

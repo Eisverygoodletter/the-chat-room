@@ -10,5 +10,6 @@ void tL::loadTextures() {
 	tL::rH.acquire("CHECKBOX_CHECKED", thor::Resources::fromFile<sf::Texture>(TEXTURE_CHECKBOX_CHECKED));
 	tL::rH.acquire("CHECKBOX_UNCHECKED", thor::Resources::fromFile<sf::Texture>(TEXTURE_CHECKBOX_UNCHECKED));
 	tL::fH.acquire("Arial", thor::Resources::fromFile<sf::Font>(FONT_ARIAL));
+	
 }
 

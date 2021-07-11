@@ -149,6 +149,7 @@
     <ClCompile Include="dataStore.cpp" />
     <ClCompile Include="loadSettings.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainPage.cpp" />
     <ClCompile Include="startSettings.cpp" />
     <ClCompile Include="textButton.cpp" />
     <ClCompile Include="textureLoader.cpp" />

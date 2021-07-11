@@ -3,4 +3,5 @@
 
 namespace oP {
 	extern void loadSettings();
+	extern void loadMain(sf::RenderWindow& window);
 }

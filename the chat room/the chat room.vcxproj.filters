@@ -66,6 +66,9 @@
     <ClCompile Include="cleanup.cpp">
       <Filter>Header Files\misc</Filter>
     </ClCompile>
+    <ClCompile Include="mainPage.cpp">
+      <Filter>Header Files\openPage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h">

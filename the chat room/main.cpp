@@ -13,6 +13,7 @@ int main() {
 		std::cout << "writing memory file ...\n";
 		dS::startSettings();
 	}
+	tL::loadTextures();
 	oP::loadSettings();
 	mc::cleanup();
 }

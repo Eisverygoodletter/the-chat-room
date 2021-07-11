@@ -14,18 +14,15 @@
 
 // default settings
 #define DEFAULT_ENCRYPTION NULL // this expands to 0, which is an int
-// default draw parameters
+#define DEFAULT_BGCOLOR sf::Color::Color(30,30,30,255)
+#define DEFAULT_WINDOW_WIDTH 800
+#define DEFAULT_WINDOW_HEIGHT 600
 
-// checkbox
-#define DEFAULT_CHECKBOX_SIZE sf::Vector2f(0.1f, 0.1f) // note that just the text is replaced
+
 // word (character) size
 #define DEFAULT_CHARACTER_SIZE 30
-// values for drawing the debug position cross
-#define DEBUG_DRAW_COLOR sf::Color::Green
-#define DEBUG_DRAW_DISTANCE 20
-// textButton
-#define DEFAULT_TEXTBUTTON_TEXTCOLOR sf::Color::Black
-#define DEFAULT_TEXTBUTTON_BGCOLOR sf::Color::White
+
+
 
 /*
 

@@ -37,6 +37,9 @@
     <Filter Include="Header Files\misc">
       <UniqueIdentifier>{95a71d66-652c-4f68-813d-32294ea9edce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\networking">
+      <UniqueIdentifier>{ccd709fb-7b50-447d-9316-28b72e6fc704}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -68,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="mainPage.cpp">
       <Filter>Header Files\openPage</Filter>
+    </ClCompile>
+    <ClCompile Include="networking.cpp">
+      <Filter>Header Files\networking</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -110,11 +116,9 @@
     <ClInclude Include="misc.h">
       <Filter>Header Files\misc</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="settings.set">
-      <Filter>Resource Files</Filter>
-    </None>
+    <ClInclude Include="networking.h">
+      <Filter>Header Files\networking</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="unchecked_checkBox.png">
@@ -128,5 +132,10 @@
     <Font Include="arial.ttf">
       <Filter>Resource Files</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="settings.json">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

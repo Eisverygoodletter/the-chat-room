@@ -88,14 +88,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\perth\Desktop\c++\thor-prebuilt-binaries\include;C:\Users\perth\source\repos\the chat room\the chat room;C:\Users\perth\Desktop\c++\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\perth\Desktop\c++\thor-prebuilt-binaries\include;C:\Users\perth\Desktop\c++\SFML-2.5.1\include;C:\Users\perth\source\repos\the chat room\the chat room;C:\Users\perth\Desktop\c++\json-develop\json-develop\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\perth\Desktop\c++\SFML-2.5.1\lib;C:\Users\perth\Desktop\c++\thor-prebuilt-binaries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-main-d.lib;opengl32.lib;winmm.lib;gdi32.lib;freetype.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;thor-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-window.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-system.lib;sfml-main.lib;opengl32.lib;winmm.lib;gdi32.lib;freetype.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;thor.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -106,12 +106,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\perth\Desktop\c++\thor-prebuilt-binaries\include;C:\Users\perth\Desktop\c++\SFML-2.5.1\include;C:\Users\perth\source\repos\the chat room\the chat room;C:\Users\perth\Desktop\c++\json-develop\json-develop\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-window.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-system.lib;sfml-main.lib;opengl32.lib;winmm.lib;gdi32.lib;freetype.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;thor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\perth\Desktop\c++\thor-prebuilt-binaries\lib;C:\Users\perth\Desktop\c++\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -150,6 +153,7 @@
     <ClCompile Include="loadSettings.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainPage.cpp" />
+    <ClCompile Include="networking.cpp" />
     <ClCompile Include="startSettings.cpp" />
     <ClCompile Include="textButton.cpp" />
     <ClCompile Include="textureLoader.cpp" />
@@ -160,6 +164,7 @@
     <ClInclude Include="checkBox.h" />
     <ClInclude Include="dataStore.h" />
     <ClInclude Include="misc.h" />
+    <ClInclude Include="networking.h" />
     <ClInclude Include="openPage.h" />
     <ClInclude Include="PreDecl_dataStore.h" />
     <ClInclude Include="PreDecl_openPage.h" />
@@ -170,14 +175,14 @@
     <ClInclude Include="ui.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="settings.set" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="checked_checkBox.png" />
     <Image Include="unchecked_checkBox.png" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="settings.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

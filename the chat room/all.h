@@ -6,8 +6,9 @@
 #include <SFML/Network.hpp>
 #include <string>
 #include <Thor/Resources.hpp>
+#include <nlohmann/json.hpp>
 // file names
-#define SETTINGS_FILE_NAME "settings.set"
+#define SETTINGS_FILE_NAME "settings.json"
 #define TEXTURE_CHECKBOX_CHECKED "checked_checkBox.png"
 #define TEXTURE_CHECKBOX_UNCHECKED "unchecked_checkbox.png"
 #define FONT_ARIAL "Arial.ttf"
@@ -17,6 +18,9 @@
 #define DEFAULT_BGCOLOR sf::Color::Color(30,30,30,255)
 #define DEFAULT_WINDOW_WIDTH 800
 #define DEFAULT_WINDOW_HEIGHT 600
+#define ENCRYPTOR_OVERRIDE "|| DEC KEY ||"
+#define ENCRYPTOR_OVERRIDE_SIZE 13
+#define DEFAULT_MSG_NUMBER 8
 
 
 // word (character) size
@@ -49,3 +53,4 @@
 #include <dataStore.h>
 #include <openPage.h>
 #include <misc.h>
+#include <networking.h>

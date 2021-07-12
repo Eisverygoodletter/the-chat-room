@@ -127,6 +127,9 @@
     <Image Include="checked_checkBox.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Font Include="arial.ttf">

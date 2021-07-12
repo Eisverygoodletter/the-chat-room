@@ -176,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="checked_checkBox.png" />
+    <Image Include="Icon.ico" />
     <Image Include="unchecked_checkBox.png" />
   </ItemGroup>
   <ItemGroup>
